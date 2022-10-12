@@ -8,18 +8,28 @@ def mctr(md):
     # OUTPUT 
     # ctr   : STRING of model center name
 
-    if md in ['ACCESS-CM2']:
-        ctr='CSIRO-ACCSSR'
-    elif md in ['CESM2','CESM2-WACCM']:
-        ctr='NCAR'
+    if md in ['CanESM5','CanESM5-CanOE']:
+        ctr='CCCma'
     elif md in ['CNRM-CM6-1','CNRM-CM6-1-HR','CNRM-ESM2-1']:
         ctr='CNRM-CERFACS'
-    elif md in ['CanESM5','CanESM5-CanOE']:
-        ctr='CCCma'
+    elif md in ['ACCESS-CM2']:
+        ctr='CSIRO-ACCSSR'
     elif md in ['MIROC-ES2L']:
         ctr='MIROC'
+    elif md in ['CESM2','CESM2-WACCM']:
+        ctr='NCAR'
     elif md in ['NorESM2-LM','NorESM2-MM']:
         ctr='NCC'
+    elif md in ['KACE-1-0-G','UKESM1-0-LL']:
+        ctr='NIMS-KA'
+    elif md in ['GFDL-CM4','GFDL-ESM4']:
+        ctr='NOAA-GFDL'
+    elif md in ['NESM3']:
+        ctr='NUIST'
+    elif md in ['CIESM']:
+        ctr='THU'
+    elif md in ['MCM-UA-1-0']:
+        ctr='UA'
 
     return ctr
 
