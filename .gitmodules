@@ -1,0 +1,3 @@
+[submodule "CASanalysis"]
+	path = CASanalysis
+	url = https://github.com/islasimpson/CASanalysis
