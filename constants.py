@@ -3,7 +3,7 @@ from metpy.units import units
 # GAS CONSTANTS (from AMS Glossary)
 Rs	= 8.3144621 	# [J mol**-1 K**-1] 	universal gas constant
 Rd	= 287 		# [J K**-1 kg**-1] 	dry gas constant 
-Rv	= 461 		# [J K**-1 kg**-1] 	vapor gas constant
+Rv	= 461       *units.joule/units.kelvin/units.kg 		# [J K**-1 kg**-1] 	vapor gas constant
 ep	= Rd/Rv 	# [unitless] 		dry to vapor gas constant ratio
 
 # SPECIFIC HEAT CAPACITY (from AMS Glossary)
