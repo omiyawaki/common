@@ -3,7 +3,7 @@ import numpy as np
 
 def rbin(re):
     if re=='sea':
-        mt,mq=np.mgrid[280:320:250j,1.25e-2:2.25e-2:250j]
+        mt,mq=np.mgrid[280:320:250j,1e-2:3e-2:250j]
     elif re=='swus':
         mt,mq=np.mgrid[280:320:250j,5e-4:1.5e-2:250j]
     return mt,mq
