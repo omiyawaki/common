@@ -24,14 +24,14 @@ def rinfo(re):
 def rlev(re,pc):
     if pc=='':
         if re=='sea':
-            levs=np.arange(0,100+10,10)
+            levs=np.arange(0,250+5,5)
         elif re=='swus':
-            levs=np.arange(0,10+1,1)
+            levs=np.arange(0,100+1,5)
     else:
         if re=='sea':
-            levs=np.arange(0,250+25,25)
+            levs=np.arange(0,250+5,5)
         elif re=='swus':
-            levs=np.arange(0,50+5,5)
+            levs=np.arange(0,100+5,5)
     return levs
 
 def rtlm(re,pc):
