@@ -72,6 +72,10 @@ def grid(fo,cl,md):
         grd='gn'
     elif md in ['CNRM-CM6-1','CNRM-ESM2-1','KACE-1-0-G']:
         grd='gr'
+    elif md in ['GFDL-CM4']:
+        grd='gr2'
+    elif md in ['GFDL-ESM4','INM-CM4-8','INM-CM5-0']:
+        grd='gr1'
 
     return grd
 
