@@ -10,13 +10,13 @@ def rbin(re):
 
 def rinfo(re):
     if re=='sea':
-        # [rloc,mgr]=pickle.load(open('/project/amp/miyawaki/plots/p004/hist_hotdays/cmip6/jja/fut-his/ssp245/mmm/defsea.t2m.95.ssp245.jja.pickle','rb'))
-        [rloc,mgr]=pickle.load(open('/home/miyawaki/defsea.t2m.95.ssp245.jja.pickle','rb'))
+        [rloc,mgr]=pickle.load(open('/project/amp/miyawaki/plots/p004/hist_hotdays/cmip6/jja/fut-his/ssp245/mmm/defsea.t2m.95.ssp245.jja.pickle','rb'))
+        # [rloc,mgr]=pickle.load(open('/home/miyawaki/defsea.t2m.95.ssp245.jja.pickle','rb'))
         rlat=mgr[0][:,0]
         rlon=mgr[1][0,:]
     elif re=='swus':
-        # [rloc,mgr]=pickle.load(open('/project/amp/miyawaki/plots/p004/hist_hotdays/era5/jja/q2m/defswus.q2m.05.jja.pickle','rb'))
-        [rloc,mgr]=pickle.load(open('/home/miyawaki/defswus.q2m.05.jja.pickle','rb'))
+        [rloc,mgr]=pickle.load(open('/project/amp/miyawaki/plots/p004/hist_hotdays/era5/jja/q2m/defswus.q2m.05.jja.pickle','rb'))
+        # [rloc,mgr]=pickle.load(open('/home/miyawaki/defswus.q2m.05.jja.pickle','rb'))
         rlat=mgr[0][:,0]
         rlon=mgr[1][0,:]
     return rloc,rlat,rlon
@@ -46,3 +46,13 @@ def rtlm(re,pc):
         elif re=='swus':
             tlim=[300,315]
     return tlim
+
+def sellatlon(vn,gr,reg):
+    if reg=='nh':
+        sla=np.where(gr['lat']>0)[0]
+        vn=vn[sla,:]
+    elif reg=='sh':
+        sla=np.where(gr['lat']<0)[0]
+        vn=vn[sla,:]
+
+    return vn

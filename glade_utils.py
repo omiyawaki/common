@@ -68,9 +68,9 @@ def grid(fo,cl,md):
     # OUTPUT 
     # grid   : STRING of grid name
     
-    if md in ['ACCESS-CM2','ACCESS-ESM1-5','BCC-CSM2-MR','CanESM5','CESM2-WACCM','HadGEM3-GC31-LL','MIROC-ES2L','MPI-ESM1-2-LR','MRI-ESM2-0','NorESM2-LM','UKESM1-0-LL']:
+    if md in ['ACCESS-CM2','ACCESS-ESM1-5','AWI-CM-1-1-MR','BCC-CSM2-MR','CanESM5','CESM2','CESM2-WACCM','CMCC-CM2-SR5','CMCC-ESM2','FGOALS-g3','HadGEM3-GC31-LL','IITM-ESM','MIROC-ES2L','MIROC6','MPI-ESM-1-2-HAM','MPI-ESM1-2-HR','MPI-ESM1-2-LR','MRI-ESM2-0','NorESM2-LM','NorESM2-MM','TaiESM1','UKESM1-0-LL']:
         grd='gn'
-    elif md in ['CNRM-CM6-1','CNRM-ESM2-1','KACE-1-0-G']:
+    elif md in ['CNRM-CM6-1','CNRM-ESM2-1','EC-Earth3','EC-Earth3-AerChem','EC-Earth3-Veg','EC-Earth3-Veg-LR','KACE-1-0-G','IPSL-CM5A2-INCA','IPSL-CM6A-LR']:
         grd='gr'
     elif md in ['GFDL-CM4']:
         grd='gr2'
