@@ -1,6 +1,21 @@
 import pickle
 import numpy as np
 
+def pointlocs(re):
+    if re=='swus':
+        iloc=[135,200]
+    elif re=='yuma':
+        iloc=[130,198]
+    elif re=='sahara':
+        iloc=[120,10]
+    elif re=='sea':
+        iloc=[110,85]
+    elif re=='amazon':
+        iloc=[90,240]
+    elif re=='zambia':
+        iloc=[80,25]
+    return iloc
+
 def rbin(re):
     if re=='sea':
         mt,mq=np.mgrid[280:320:250j,1e-2:3e-2:250j]
