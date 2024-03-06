@@ -82,7 +82,7 @@ def grid(md):
 
 def smile(md,fo,varn):
     if fo=='historical':
-        if md=='ACCESS-CM2':
+        if md=='ACCESS-ESM1-5':
             le=[f'r{i}i1p1f1' for i in range(1,41)]
         elif md=='CanESM5':
             le=[f'r{i}i1p1f1' for i in range(1,26)]
@@ -105,7 +105,7 @@ def smile(md,fo,varn):
             le=[f'r{i}i1p1f1' for i in range(1,19)]
 
     elif fo=='ssp370':
-        if md=='ACCESS-CM2':
+        if md=='ACCESS-ESM1-5':
             le=[f'r{i}i1p1f1' for i in range(1,41)]
         elif md=='CanESM5':
             le=[f'r{i}i1p1f1' for i in range(1,26)]
